@@ -33,7 +33,6 @@ class TicTacToe
 
   def input_to_index(player_input)
     player_input.to_i - 1
-
   end
 
   def move(position, token)
