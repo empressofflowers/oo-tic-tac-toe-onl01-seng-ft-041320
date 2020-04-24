@@ -53,6 +53,7 @@ class TicTacToe
   end
 
   def turn
+    puts "Enter a number 1-9"
     #1. Ask the user for their move by specifying a position between 1-9.
     #2. Receive the user's input.
     #3. Translate that input into an index value.
