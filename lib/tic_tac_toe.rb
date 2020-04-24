@@ -66,7 +66,7 @@ class TicTacToe
       move(index, current_player)
       display_board
     else
-      self
+      turn
     end
     #1. Ask the user for their move by specifying a position between 1-9.
     #2. Receive the user's input.
@@ -80,10 +80,11 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBINATIONS.any?(|combo|     )
-    #while board.include? WIN_COMBINATIONS
-    #false or nil
-    # return array of winning combinations
+    WIN_COMBINATIONS.any? do |combo|
+      if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
+        return combo
+      end
+    end
   end
 
   def full?
