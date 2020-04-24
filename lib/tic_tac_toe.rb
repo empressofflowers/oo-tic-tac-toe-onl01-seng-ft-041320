@@ -15,8 +15,8 @@ class TicTacToe
     @board = board || Array.new(9, " ")
   end
 
-  def self.input_to_index(current_player)
-    @board[player input - 1]
+  def self.input_to_index(player_input)
+    player_input = player_input.to_i
   end
 
   def current_player
