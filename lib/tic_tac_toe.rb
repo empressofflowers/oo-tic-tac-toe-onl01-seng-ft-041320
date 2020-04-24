@@ -40,7 +40,10 @@ class TicTacToe
     @board[position] = tokent
   end
   def position_taken(index)
-    @board[index] == " "
+    if @board[index] == " "
+      false
+    else
+      true
 
   end
   def valid_move
