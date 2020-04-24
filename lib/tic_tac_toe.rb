@@ -80,8 +80,10 @@ class TicTacToe
   end
 
   def won?
+    WIN_COMBINATIONS.any?(|a, b, c)
+    #while board.include? WIN_COMBINATIONS
     #false or nil
-    #array of winning combinations
+    # return array of winning combinations
   end
 
   def full?
