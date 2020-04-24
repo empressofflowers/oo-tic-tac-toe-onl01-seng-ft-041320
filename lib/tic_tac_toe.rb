@@ -45,8 +45,15 @@ class TicTacToe
     #3. Translate that input into an index value.
     #4. If the move is valid, make the move and display the board.
     #5. If the move is invalid, ask for a new move until a valid move is received.
+  end
 
+  def turn_count                
+    
+  end
 
+  def won?
+    #false or nil
+    #array of winning combinations
   end
 
 
