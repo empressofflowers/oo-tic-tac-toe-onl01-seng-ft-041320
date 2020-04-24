@@ -55,8 +55,13 @@ class TicTacToe
   def turn
     puts "Enter a number 1-9"
     user_entry = gets
-
+    index = input_to_index(user_entry)
     valid_move?(index) current_player
+
+    if valid_move_response
+      move(index, turnvount)
+    else
+      puts "Try a new position."
     #1. Ask the user for their move by specifying a position between 1-9.
     #2. Receive the user's input.
     #3. Translate that input into an index value.
