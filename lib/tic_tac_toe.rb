@@ -57,13 +57,23 @@ class TicTacToe
   end
 
   def full?
-    
+
   end
 
   def draw?
     #returns true if nothing won
   end
 
+  def over?
+    #board won or returns true
+  end
 
+  def winner
+    #returns the x or the o that one
+  end
+
+  def play
+
+  end
 
 end
