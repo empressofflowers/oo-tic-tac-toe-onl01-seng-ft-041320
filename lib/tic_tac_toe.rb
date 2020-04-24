@@ -39,6 +39,10 @@ class TicTacToe
     !position_taken?(index) && index.between?(0,8)
   end
 
+  def turn_count
+    @board.count{|token| token == "X" || token == "O"}
+  end
+
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
   end
@@ -60,10 +64,6 @@ class TicTacToe
     #3. Translate that input into an index value.
     #4. If the move is valid, make the move and display the board.
     #5. If the move is invalid, ask for a new move until a valid move is received.
-  end
-
-  def turn_count
-    @board.count{|token| token == "X" || token == "O"}
   end
 
   def won?
