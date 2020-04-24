@@ -47,8 +47,8 @@ class TicTacToe
     #5. If the move is invalid, ask for a new move until a valid move is received.
   end
 
-  def turn_count                
-    
+  def turn_count
+
   end
 
   def won?
