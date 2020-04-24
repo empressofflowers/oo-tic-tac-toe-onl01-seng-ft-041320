@@ -47,6 +47,11 @@ class TicTacToe
     !position_taken?(index) && index.between[0, 8]
   end
 
+
+  def current_player
+    turn_count % 2 == 0 ? "X" : "O"
+  end
+
   def turn
     puts "Enter a number 1-9"
     user_entry = gets
