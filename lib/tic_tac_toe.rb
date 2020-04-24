@@ -60,6 +60,7 @@ class TicTacToe
 
     if valid_move_response
       move(index, current_player)
+      display_board
     else
       self
     #1. Ask the user for their move by specifying a position between 1-9.
