@@ -83,7 +83,7 @@ class TicTacToe
   end
 
   def over?
-    #board won or returns true
+    won? || draw?
   end
 
   def winner
