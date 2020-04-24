@@ -15,11 +15,6 @@ class TicTacToe
     @board = board || Array.new(9, " ")
   end
 
-  def self.input_to_index(player_input)
-    player_input = player_input.to_i
-    player_input = player_input - 1
-  end
-
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
   end
@@ -34,6 +29,15 @@ class TicTacToe
     puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
+  end
+
+  def self.input_to_index(player_input)
+    player_input = player_input.to_i
+    player_input = player_input - 1
+  end
+
+  def move(position, token = "X")
+    @board[position] = tokent
   end
 
   def valid_move
