@@ -39,7 +39,10 @@ class TicTacToe
   def move(position, token = "X")
     @board[position] = tokent
   end
-
+  def position_taken(index)
+    @board[index] == " "
+    
+  end
   def valid_move
 
   end
