@@ -56,7 +56,7 @@ class TicTacToe
     puts "Enter a number 1-9"
     user_entry = gets
     index = input_to_index(user_entry)
-    valid_move?(index) current_player
+    valid_move_response = valid_move?(index)
 
     if valid_move_response
       move(index, current_player)
