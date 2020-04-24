@@ -15,6 +15,10 @@ class TicTacToe
     @board = board || Array.new(9, " ")
   end
 
+  def self.input_to_index(current_player)
+    @board[player input - 1]
+  end
+
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
   end
@@ -29,6 +33,20 @@ class TicTacToe
     puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
+  end
+
+  def valid_move
+
+  end
+
+  def turn
+    #1. Ask the user for their move by specifying a position between 1-9.
+    #2. Receive the user's input.
+    #3. Translate that input into an index value.
+    #4. If the move is valid, make the move and display the board.
+    #5. If the move is invalid, ask for a new move until a valid move is received.
+
+
   end
 
 
