@@ -17,6 +17,7 @@ class TicTacToe
 
   def self.input_to_index(player_input)
     player_input = player_input.to_i
+    player_input = player_input - 1
   end
 
   def current_player
