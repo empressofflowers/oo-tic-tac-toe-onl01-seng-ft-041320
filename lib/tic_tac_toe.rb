@@ -56,6 +56,14 @@ class TicTacToe
     #array of winning combinations
   end
 
+  def full?
+    
+  end
+
+  def draw?
+    #returns true if nothing won
+  end
+
 
 
 end
